@@ -75,7 +75,7 @@ tbody tr:nth-child(even) td{background:var(--accent-tint)}
 .path h4{font-size:36px;font-weight:800;margin-bottom:12px}
 .path.short{background:var(--grey-pale)} .path.short h4{color:var(--muted)}
 .path.think{background:var(--accent-tint);border-color:var(--accent)} .path.think h4{color:var(--accent-dk)}
-.path li{font-size:28px;margin:16px 0;padding-right:30px;position:relative}
+.path li{font-size:25px;margin:13px 0;padding-right:30px;position:relative}
 .path li:before{content:"";position:absolute;right:2px;top:15px;width:11px;height:11px;border-radius:2px;transform:rotate(24deg)}
 .path.short li:before{border:3px solid var(--grey)} .path.think li:before{border:3px solid var(--accent)}
 .res{margin-top:18px;font-size:29px;font-weight:800}
@@ -91,7 +91,7 @@ ul.big-list li:before{top:20px}
 .fc p{font-size:22px;line-height:1.4}
 .qcol{flex:1;background:#fff;border:1.5px solid var(--line);border-radius:10px;padding:14px 16px;display:flex;flex-direction:column;gap:9px}
 .qcol h4{font-size:26px;font-weight:800;color:var(--accent-dk)}
-.qcol .q{background:var(--accent-tint);border-radius:8px;padding:10px 13px;font-size:21px;line-height:1.38;font-weight:400}
+.qcol .q{background:var(--accent-tint);border-radius:8px;padding:8px 13px;font-size:20px;line-height:1.38;font-weight:400}
 .ring{position:absolute;border-radius:50%;display:flex;justify-content:center;font-weight:800}
 .qnet{position:relative;flex:1}
 .qnet span{position:absolute;background:#fff;border:2px solid var(--accent);border-radius:30px;padding:8px 18px;font-size:22px;font-weight:500;white-space:nowrap}
@@ -111,8 +111,8 @@ ul.big-list li:before{top:20px}
 /* counter + timeline */
 .counter{display:flex;gap:46px;align-items:center;flex:1}
 .counter .num{display:flex;gap:18px}
-.counter .cell{background:var(--accent-tint);border:2px solid var(--accent);border-radius:14px;width:240px;height:280px;display:flex;flex-direction:column;align-items:center;justify-content:center}
-.counter .cell b{font-size:150px;line-height:1;color:var(--accent-dk);font-weight:800}
+.counter .cell{background:var(--accent-tint);border:2px solid var(--accent);border-radius:14px;width:200px;height:260px;display:flex;flex-direction:column;align-items:center;justify-content:center}
+.counter .cell b{font-size:120px;line-height:1;color:var(--accent-dk);font-weight:800}
 .counter .cell span{font-size:32px;color:var(--ink);font-weight:500;margin-top:8px}
 .counter .txt p{font-size:36px;line-height:1.4}
 .tl{display:flex;gap:18px;align-items:stretch;position:relative;margin-top:10px}
@@ -130,7 +130,7 @@ ul.big-list li:before{top:20px}
 .pq .c{background:#fff;border:1.5px solid var(--line);border-top:5px solid var(--accent);border-radius:9px;padding:12px 14px;min-height:150px}
 .pq .c .k{font-size:15px;font-weight:800;color:var(--muted)}
 .pq .c h4{font-size:25px;font-weight:800;color:var(--accent-dk);margin:2px 0 4px}
-.pq .c p{font-size:19px;line-height:1.38}
+.pq .c p{font-size:23px;line-height:1.3;color:var(--ink);font-weight:400}
 .pq .c.red{border-top-color:var(--accent-2)} .pq .c.red h4{color:var(--accent-2)}
 .timer{width:270px;background:var(--accent-dk);color:#fff;border-radius:14px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:6px;padding:20px}
 .timer .who{font-size:26px;font-weight:700}
@@ -154,10 +154,18 @@ ul.big-list li:before{top:20px}
 .stp h4{font-size:30px;font-weight:800;line-height:1.15}
 .stp .en{font-size:17px;font-weight:500;opacity:.8}
 .stp p{font-size:20px;line-height:1.38}
-.stp.s1{height:55%;background:var(--grey-pale);border:2px solid var(--grey)} .stp.s1 h4,.stp.s1 .lv{color:var(--muted)}
-.stp.s2{height:70%;background:var(--grey-pale);border:2px solid var(--grey)} .stp.s2 h4,.stp.s2 .lv{color:var(--muted)}
+.stp.s1{height:60%;background:#F6F1EA;border:2px solid #CDB894} .stp.s1 h4{color:#8A6420}
+.stp.s2{height:70%;background:#EEF3F9;border:2px solid #9DB5D0} .stp.s2 h4{color:#2F5F8F}
 .stp.s3{height:85%;background:var(--accent-tint);border:2px solid var(--accent)} .stp.s3 h4,.stp.s3 .lv{color:var(--accent-dk)}
 .stp.s4{height:100%;background:var(--accent-tint);border:3px solid var(--accent-dk)} .stp.s4 h4,.stp.s4 .lv{color:var(--accent-dk)}
+.stp .lv{color:var(--accent-2)!important}
+.stp p{color:var(--ink);font-weight:400}
+.stp .ex{color:var(--accent-2);font-weight:700}
+.qwrap{display:flex;flex-wrap:wrap;gap:10px;align-content:flex-start}
+.qwrap span{background:#fff;border:2px solid var(--accent);border-radius:30px;padding:6px 16px;font-size:21px;font-weight:500}
+.qwrap .lbl{width:100%;border:0;padding:0;background:none;font-size:18px;font-weight:800;color:var(--accent-2)}
+.qwrap.cre span{border-color:var(--accent-2);background:#FBF2F2}
+.qwrap.cre .lbl{border:0;background:none}
 .band{display:flex;gap:14px;margin-top:10px}
 .band div{flex:1;text-align:center;font-size:22px;font-weight:700;padding:8px;border-radius:8px}
 .band .imp{background:var(--grey-pale);color:var(--muted)}
@@ -201,9 +209,9 @@ html,body{height:100%;background:#2E2D2A;overflow:hidden;font-family:'Heebo',Ari
 
 <!-- 2 bio: three big image groups, each click replaces the previous one -->
 <section class="slide">
-  <h2 style="margin-bottom:14px">נעים להכיר</h2>
   <div class="swapbox">
     <div class="sw">
+      <h2 style="margin-bottom:0">נעים להכיר</h2>
       <p class="cap"><b>עשרים שנה כאיש חינוך,</b> חלקן בניהול מערכות חינוך: הקמה וניהול בית הספר "שורשים", וסגן מנהל פסג"ה תל אביב-יפו</p>
       <div class="pics">
         <img src="assets/bio/shorashim.webp" alt="בית ספר שורשים" style="width:540px">
@@ -217,7 +225,9 @@ html,body{height:100%;background:#2E2D2A;overflow:hidden;font-family:'Heebo',Ari
       </div>
     </div>
     <div class="sw f">
-      <p class="cap"><b>שלוש השנים האחרונות:</b> רק הממשק שבין בינה מלאכותית ללמידה ולהוראה. כותב יחד עם פרופ' אמנון גלסנר את "אהבת למידה וחדוות גילוי", ומנחה את הפודקאסט "דיבורי בינה"</p>
+      <p class="cap"><b>כמעט ארבע השנים האחרונות</b> (מאז יציאת
+        <span class="en">ChatGPT</span>):
+        רק הממשק שבין בינה מלאכותית ללמידה ולהוראה. כותב יחד עם פרופ' אמנון גלסנר את "אהבת למידה וחדוות גילוי", ומנחה את הפודקאסט "דיבורי בינה"</p>
       <div class="pics">
         <img src="assets/bio/book.png" alt="הספר אהבת למידה וחדוות גילוי" style="height:440px">
         <img src="assets/bio/podcast.jpg" alt="הפודקאסט דיבורי בינה" style="height:400px">
@@ -248,7 +258,7 @@ html,body{height:100%;background:#2E2D2A;overflow:hidden;font-family:'Heebo',Ari
   <div class="agenda">
     <div class="it act"><span class="n">01</span> איפה אנחנו במהפכה</div>
     <div class="it"><span class="n">02</span> החשש: ניוון ומוטיבציה</div>
-    <div class="it"><span class="n">03</span> ההבטחה: יוטגוגיה ושוויון הזדמנויות</div>
+    <div class="it"><span class="n">03</span> ההבטחה: יוטגוגיה ולמידה אותנטית</div>
     <div class="it"><span class="n">04</span> מתיאוריה לפרקטיקה</div>
   </div>
 </section>
@@ -275,6 +285,7 @@ html,body{height:100%;background:#2E2D2A;overflow:hidden;font-family:'Heebo',Ari
     <div class="num">
       <div class="cell"><b id="cY">3</b><span>שנים</span></div>
       <div class="cell"><b id="cM">10</b><span>חודשים</span></div>
+      <div class="cell"><b id="cD">20</b><span>ימים</span></div>
     </div>
     <div class="txt" style="flex:1">
       <p class="lead f">זמן קצר מאוד במונחים של מערכת חינוך.</p>
@@ -288,11 +299,11 @@ html,body{height:100%;background:#2E2D2A;overflow:hidden;font-family:'Heebo',Ari
   <div class="kicker">מה השתנה מאז</div>
   <h2>מצ'אט שעונה, <span class="r">לסוכן שמבצע</span></h2>
   <div class="tl">
-    <div class="stage f"><div class="yr">2023</div><div class="box"><h3>שואלים ומקבלים</h3><p>צ'אט שעונה על שאלה. התלמיד מעתיק, משפר, מגיש.</p></div></div>
-    <div class="stage f"><div class="yr">2025</div><div class="box"><h3>כלים שמעבדים</h3><p>מסכמים טקסטים, מייצרים מפות חשיבה ופודקאסטים, מחפשים מקורות.</p></div></div>
-    <div class="stage now f"><div class="yr">2026</div><div class="box"><h3>סוכנים שעושים</h3><p>מקבלים משימה שלמה ומבצעים אותה מקצה לקצה: קוראים, מתכננים, כותבים, בודקים.</p></div></div>
+    <div class="stage f"><div class="yr">2023</div><div class="box"><h3>שואלים ומקבלים</h3><p>צ'אט שעונה על שאלות ומנסח טקסטים.</p></div></div>
+    <div class="stage f"><div class="yr">2025</div><div class="box"><h3>כלים שמעבדים ומייצרים</h3><p>מסכמים, מחפשים מקורות, ממפים ידע. ומייצרים תוצרים מוגבלים: תמונה, מצגת בינונית, שיר, סרטון קצר - ובדרך כלל לא טוב.</p></div></div>
+    <div class="stage now f"><div class="yr">2026</div><div class="box"><h3>סוכנים שעושים</h3><p>יכולים לעשות כמעט כל מה שאדם מוכשר מאוד, עם התמצאות דיגיטלית על-אנושית, יכול לעשות על מחשב. ועוד.</p></div></div>
   </div>
-  <p class="f" style="margin-top:28px;font-size:28px">כלומר: הבינה כבר נמצאת <span class="r">בתוך כל משימה</span> שאנחנו נותנים, לכל אורכה.</p>
+  <p class="f" style="margin-top:24px;font-size:27px">המסקנה: הבינה לא רק "נמצאת". היא הולכת <span class="r">להשתלב באופן אינטנסיבי</span> בכל היבט של חיינו, ובוודאי בכל היבט של הוראה, למידה והערכה.</p>
 </section>
 
 <!-- 7 not where the buttons are -->
@@ -301,13 +312,13 @@ html,body{height:100%;background:#2E2D2A;overflow:hidden;font-family:'Heebo',Ari
   <div class="split">
     <div class="tx">
       <ul class="dots">
-        <li class="f">רוב המורים והתלמידים כבר יודעים שיש מודל שפה שכותב, מסכם ומתכנן.</li>
+        <li class="f">רוב המורים, וגם רוב התלמידים, כבר יודעים שיש מודל שפה שכותב, מסכם ומתכנן.</li>
         <li class="f">יש מובילים ויש מאחרים, אבל הם כבר בקצוות.</li>
       </ul>
-      <p class="f big" style="margin-top:18px">השיחה המשמעותית היום: <span class="r">איך עושים פדגוגיה</span> משולבת בינה מלאכותית.</p>
+      <p class="f" style="margin-top:14px;font-size:34px;line-height:1.35">השיחה המשמעותית היום: <span class="r">איך עושים פדגוגיה</span> משולבת בינה מלאכותית.</p>
     </div>
     <div class="im">
-      <svg viewBox="0 0 520 340" width="520" height="340" aria-label="עקומת פעמון">
+      <svg viewBox="0 0 520 340" width="420" height="275" aria-label="עקומת פעמון">
         <path d="M20 300 C 120 300, 170 60, 260 60 C 350 60, 400 300, 500 300" fill="#EDF5E4" stroke="#75B743" stroke-width="5"/>
         <line x1="20" y1="300" x2="500" y2="300" stroke="#B9B6B0" stroke-width="3"/>
         <text x="455" y="330" font-size="22" fill="#7A7874" text-anchor="middle" font-family="Heebo">מובילים</text>
@@ -317,6 +328,10 @@ html,body{height:100%;background:#2E2D2A;overflow:hidden;font-family:'Heebo',Ari
         <text x="260" y="141" font-size="22" fill="#fff" text-anchor="middle" font-family="Heebo" font-weight="700">השיחה כאן</text>
       </svg>
     </div>
+  </div>
+  <div class="cols" style="margin-top:10px">
+    <div class="card f" style="padding:14px 22px;border-top:5px solid var(--accent)"><h4 style="font-size:25px;font-weight:800;color:var(--accent-dk);margin-bottom:4px">מצד המורים</h4><p style="font-size:23px;line-height:1.4">לא עוד כלי שמייצר עוד מאותו הדבר, אלא דרך לחשוב על <span class="r">פדגוגיה חדשה</span>, שלא הייתה אפשרית עד היום.</p></div>
+    <div class="card f" style="padding:14px 22px;border-top:5px solid var(--accent-2)"><h4 style="font-size:25px;font-weight:800;color:var(--accent-2);margin-bottom:4px">מצד התלמידים</h4><p style="font-size:23px;line-height:1.4">להפוך את הבינה מטכנולוגיה <span class="r">שמעתיקים ממנה</span>, לטכנולוגיה שחושבים ולומדים איתה.</p></div>
   </div>
 </section>
 
@@ -336,7 +351,7 @@ html,body{height:100%;background:#2E2D2A;overflow:hidden;font-family:'Heebo',Ari
   <div class="agenda">
     <div class="it"><span class="n">01</span> איפה אנחנו במהפכה</div>
     <div class="it act"><span class="n">02</span> החשש: ניוון ומוטיבציה</div>
-    <div class="it"><span class="n">03</span> ההבטחה: יוטגוגיה ושוויון הזדמנויות</div>
+    <div class="it"><span class="n">03</span> ההבטחה: יוטגוגיה ולמידה אותנטית</div>
     <div class="it"><span class="n">04</span> מתיאוריה לפרקטיקה</div>
   </div>
 </section>
@@ -344,15 +359,15 @@ html,body{height:100%;background:#2E2D2A;overflow:hidden;font-family:'Heebo',Ari
 <!-- 9 the scene -->
 <section class="slide">
   <div class="kicker">מהשטח</div>
-  <h2>האם כך נראית עבודה להגשה השנה?</h2>
+  <h2>מה נותר מתהליך ההערכה הטקסטואלי?</h2>
   <div class="split">
     <div class="tx">
       <div class="chat">
         <div class="bub me"><small>התלמיד</small>תכתוב לי עבודה על מחזור המים, עמוד וחצי, שתישמע כמו של תלמיד כיתה ח'.</div>
         <div class="bub ai"><small>הבינה</small>בשמחה! הנה עבודה על מחזור המים: מבוא, שלבי המחזור, חשיבות המים לחיים, סיכום...</div>
       </div>
-      <p class="f" style="margin-top:26px;font-size:30px">ולמחרת: העבודה מוגשת, <span class="r">ומקבלת ציון טוב.</span></p>
-      <p class="f huge" style="font-size:40px;margin-top:14px;color:var(--accent-dk)">מי ראה את זה השנה?</p>
+      <p class="f" style="margin-top:22px;font-size:26px">ולמחרת: העבודה מוגשת <span class="r">ומקבלת ציון טוב</span> - ולעיתים רבות טוב יותר מעבודה מקבילה של תלמיד שלא השתמש בבינה מלאכותית.</p>
+      <p class="f huge" style="font-size:38px;margin-top:10px;color:var(--accent-dk)">מי ראה את זה השנה?</p>
     </div>
     <div class="im">
       <div class="paper" style="width:360px;position:relative">
@@ -371,26 +386,26 @@ html,body{height:100%;background:#2E2D2A;overflow:hidden;font-family:'Heebo',Ari
 <section class="slide">
   <h2>סוגיית הניוון: עוד מאותו הדבר, או סיפור חדש?</h2>
   <div class="cols" style="flex:1;min-height:0;align-items:stretch">
-    <div class="card" style="display:flex;flex-direction:column;gap:10px">
+    <div class="card f" style="display:flex;flex-direction:column;gap:10px">
       <div style="display:flex;gap:12px;height:250px">
         <img src="assets/pull/phaedrus-cover.jpg" alt="פיידרוס, אפלטון" style="height:100%;border-radius:4px">
         <img src="assets/pull/phaedrus-text.png" alt="קטע מתוך פיידרוס" style="height:100%;border-radius:4px;object-fit:cover;object-position:top;width:150px">
       </div>
-      <p class="f" style="font-size:22px"><b>אפלטון, לפני 2,400 שנה:</b> הכתב יביא שכחה, ויעניק "את <span class="r">מראית העין</span> של החוכמה".</p>
+      <p style="font-size:22px"><b>אפלטון, לפני 2,400 שנה:</b> הכתב יביא שכחה, ויעניק "את <span class="r">מראית העין</span> של החוכמה".</p>
     </div>
-    <div class="card" style="display:flex;flex-direction:column;gap:10px">
+    <div class="card f" style="display:flex;flex-direction:column;gap:10px">
       <div style="display:flex;gap:10px;height:250px;align-items:center;justify-content:center">
         <img src="assets/pull/tool-b.png" alt="וייז" style="height:120px;border-radius:8px">
         <img src="assets/pull/tool-a.jpg" alt="מחשבון" style="height:130px;border-radius:8px">
         <img src="assets/pull/tool-c.jpg" alt="טלפון חכם" style="height:150px;border-radius:8px">
       </div>
-      <p class="f" style="font-size:22px"><b>ואז:</b> וייז, מחשבון וטלפון. שחררנו את הניווט, החישוב והזיכרון, והסתדרנו.</p>
+      <p style="font-size:22px"><b>ואז:</b> וייז, מחשבון וטלפון. שחררנו את הניווט, החישוב והזיכרון, והסתדרנו.</p>
     </div>
-    <div class="card" style="display:flex;flex-direction:column;gap:10px">
+    <div class="card f" style="display:flex;flex-direction:column;gap:10px">
       <div style="height:250px;display:flex;justify-content:center">
         <img src="assets/pull/geek-b.jpg" alt="כתבה בגיקטיים על מפתחים שאיבדו את היכולת לכתוב קוד" style="height:100%;border-radius:6px">
       </div>
-      <p class="f" style="font-size:22px"><b>ספטמבר 2025:</b> הכלי נפל, ומפתחים גילו שהם <span class="r">כבר לא יודעים</span> לכתוב קוד לבד.</p>
+      <p style="font-size:22px"><b>ספטמבר 2025:</b> הכלי נפל, ומפתחים גילו שהם <span class="r">כבר לא יודעים</span> לכתוב קוד לבד.</p>
     </div>
   </div>
   <p class="f lead" style="margin-top:14px;text-align:center;font-weight:700">אז מה שונה הפעם?</p>
@@ -403,7 +418,7 @@ html,body{height:100%;background:#2E2D2A;overflow:hidden;font-family:'Heebo',Ari
     <div class="path short f">
       <h4>מסלול הקיצור</h4>
       <ul>
-        <li>נכנסים כדי "לגמור עם זה"</li>
+        <li>נכנסים כדי להיפטר מהר מהמטלה המעיקה</li>
         <li>מבקשים תוצר</li>
         <li>מעתיקים, ויוצאים</li>
       </ul>
@@ -412,9 +427,9 @@ html,body{height:100%;background:#2E2D2A;overflow:hidden;font-family:'Heebo',Ari
     <div class="path think f">
       <h4>מסלול החשיבה</h4>
       <ul>
-        <li>נכנסים כדי לבנות את הדבר הכי טוב שאפשר</li>
-        <li>הבינה כמוח נוסף, לסיעור מוחות</li>
-        <li>הלוך ושוב: "זה טוב, זה לא, כאן אולי"</li>
+        <li>נכנסים כדי ליצור תוצר משמעותי, שגדול מסך חלקיו: המוח האנושי והמוח הסיליקוני</li>
+        <li>הלוך ושוב, "זה טוב, זה לא, כאן אולי", עד שהתוצר באמת מספק</li>
+        <li>האדם מעורב לאורך כל הדרך, ותורם את מה שרק הוא יכול: שיפוט, ידע וכוונה</li>
       </ul>
       <div class="res">החשיבה מתעצמת</div>
     </div>
@@ -455,14 +470,14 @@ html,body{height:100%;background:#2E2D2A;overflow:hidden;font-family:'Heebo',Ari
   <div class="agenda">
     <div class="it"><span class="n">01</span> איפה אנחנו במהפכה</div>
     <div class="it"><span class="n">02</span> החשש: ניוון ומוטיבציה</div>
-    <div class="it act"><span class="n">03</span> ההבטחה: יוטגוגיה ושוויון הזדמנויות</div>
+    <div class="it act"><span class="n">03</span> ההבטחה: יוטגוגיה ולמידה אותנטית</div>
     <div class="it"><span class="n">04</span> מתיאוריה לפרקטיקה</div>
   </div>
 </section>
 
 <!-- 14 pair share (6 minutes: 3 per speaker; the timer starts when it is revealed) -->
 <section class="slide">
-  <h2 style="margin-bottom:8px">שיתוף בזוגות: שמונה שאלות מנחות</h2>
+  <h2 style="margin-bottom:8px">שיתוף בזוגות: שמונה שאלות מנחות <span style="font-weight:400;color:var(--accent-dk)">(6 דקות)</span></h2>
   <p style="font-size:24px;margin-bottom:14px">שתפו זה את זה <b>תהליך למידה אמיתי</b> שעבר עליכם לאחרונה, מתוך רצון, סקרנות או צורך אישי. אין צורך לכתוב כלום.</p>
   <div style="display:flex;gap:18px;flex:1;min-height:0">
     <div class="pq" style="flex:1">
@@ -485,26 +500,22 @@ html,body{height:100%;background:#2E2D2A;overflow:hidden;font-family:'Heebo',Ari
 
 <!-- 15 what is heutagogy -->
 <section class="slide">
-  <div class="kicker">מה שתיארתם עכשיו, בזוגות</div>
-  <h2 style="margin-bottom:6px">מהי יוטגוגיה?</h2>
-  <div class="split" style="gap:34px">
-    <div class="tx">
-      <p class="lead" style="color:var(--accent-dk);font-weight:700">למידה בהכוונה ובהובלה עצמית</p>
-      <p style="font-size:24px;margin:6px 0 10px"><b>יוּטָה</b> - בלטינית: בעצמי, בנטייה שלי. <b>גוֹגיה</b> - הובלה.</p>
-      <ul class="dots">
-        <li class="f" style="font-size:25px">במרכז: <span class="r">הסקרנות והעניין האישי</span> של הלומדים. תפיסה רדיקלית, מול הפדגוגיה והאנדרגוגיה השולטות.</li>
-        <li class="f" style="font-size:25px">המונח הוצע על ידי שני חוקרים מאוסטרליה, הייז וקניון (2000).</li>
-        <li class="f" style="font-size:25px">והבינה המלאכותית מאפשרת אותה כמו <b class="g">כפפה ליד</b>: לכל לומד יש עכשיו שותף לחקירה, בקצב שלו.</li>
-      </ul>
-      <p class="small en" style="margin-top:10px;display:block;text-align:left">Hase, S., &amp; Kenyon, C. (2000). From andragogy to heutagogy. Ulti-BASE In-Site.</p>
+  <h2 style="margin-bottom:10px">מהי יוטגוגיה? <span style="font-weight:400;color:var(--accent-dk);font-size:36px">למידה בהכוונה ובהובלה עצמית</span></h2>
+  <div class="cols" style="gap:34px;align-items:flex-start">
+    <div style="flex:.75">
+      <p style="font-size:24px"><b>יוּטָה</b> - בלטינית: בעצמי, בנטייה שלי.<br><b>גוֹגיה</b> - הובלה.</p>
+      <p class="small en" style="display:block;text-align:left;margin-top:8px;font-size:15px">Hase, S., &amp; Kenyon, C. (2000). From andragogy to heutagogy.</p>
     </div>
-    <div class="im" style="flex:.95">
-      <div class="hg-pics">
-        <figure><img src="assets/heut/emile.jpg" alt="כריכת המהדורה הראשונה של אמיל מאת רוסו" style="height:250px"><figcaption>רוסו<br>"אמיל"</figcaption></figure>
-        <figure><img src="assets/heut/rogers.jpg" alt="כריכת הספר החופש ללמוד מאת קארל רוג'רס" style="height:230px"><figcaption>רוג'רס<br>"החופש ללמוד"</figcaption></figure>
-        <figure><img src="assets/heut/mitra.jpg" alt="סוגטה מיטרה, יוזם ניסוי החור שבקיר" style="height:200px"><figcaption>סוגטה מיטרה<br>"החור שבקיר"</figcaption></figure>
-      </div>
-    </div>
+    <ul class="dots" style="flex:1.45;margin-top:-12px">
+      <li class="f" style="font-size:23px;margin:8px 0">במרכז: <span class="r">הסקרנות והעניין האישי</span> של הלומדים. תפיסה רדיקלית, מול הפדגוגיה והאנדרגוגיה השולטות.</li>
+      <li class="f" style="font-size:23px;margin:8px 0">המונח הוצע על ידי שני חוקרים מאוסטרליה, הייז וקניון (2000).</li>
+      <li class="f" style="font-size:23px;margin:8px 0">והבינה המלאכותית מאפשרת אותה כמו <b class="g">כפפה ליד</b>: לכל לומד יש עכשיו שותף לחקירה, בקצב שלו.</li>
+    </ul>
+  </div>
+  <div class="hg-pics f" style="flex:1;min-height:0;margin-top:10px;gap:40px">
+    <figure><img src="assets/heut/emile.jpg" alt="כריכת המהדורה הראשונה של אמיל מאת רוסו" style="height:300px"><figcaption>ז'אן ז'אק רוסו, "אמיל"</figcaption></figure>
+    <figure><img src="assets/heut/rogers.jpg" alt="כריכת הספר החופש ללמוד מאת קארל רוג'רס" style="height:300px"><figcaption>קארל רוג'רס, "החופש ללמוד"</figcaption></figure>
+    <figure><img src="assets/heut/mitra.jpg" alt="סוגטה מיטרה, יוזם ניסוי החור שבקיר" style="height:300px"><figcaption>סוגטה מיטרה, "החור שבקיר"</figcaption></figure>
   </div>
 </section>
 
@@ -512,10 +523,10 @@ html,body{height:100%;background:#2E2D2A;overflow:hidden;font-family:'Heebo',Ari
 <section class="slide mid">
   <div class="fill" style="align-items:center">
     <div class="kicker">מה אנחנו מבקשים לפתח?</div>
-    <p class="big" style="max-width:1050px">לא לומדים שיודעים בעיקר להפיק תשובות בעזרת הבינה,</p>
+    <p class="big" style="max-width:1050px">לא לומדים שמסתפקים בהפקת תשובות מהבינה,</p>
     <p class="big f" style="max-width:1050px">אלא לומדים שנעזרים בה כדי <span class="r">להתבונן, להסתקרן, ליזום</span>, לשאול שאלות טובות, ולהחליט כיצד ללמוד.</p>
     <div class="rule f" style="margin:26px auto 14px"></div>
-    <p class="f" style="font-size:24px;color:var(--muted)">פרופ' אמנון גלסנר</p>
+    <p class="f" style="font-size:24px;color:var(--muted)">בהשראת פרופ' אמנון גלסנר</p>
   </div>
 </section>
 
@@ -545,7 +556,38 @@ html,body{height:100%;background:#2E2D2A;overflow:hidden;font-family:'Heebo',Ari
       <div class="q f">"איך אבדוק שהמקורות עונים על השאלה שלי, ולא רק קלים וזמינים?"</div>
     </div>
   </div>
-  <p class="f" style="margin-top:16px;font-size:26px;text-align:center">הבינה <span class="r">לא מחליטה</span> במקום הלומד. היא עוזרת לו לברר את ההחלטות שלו.</p>
+  <p class="f" style="margin-top:12px;font-size:22px;line-height:1.45">השיחה אינה על תחום הדעת
+    (<span class="en">content knowledge</span>)
+    אלא <span class="r">על הלמידה עצמה</span>: עליי כלומד, על העניין שלי בתחום, על מציאת הסקרנות, המוטיבציה והחיבור האישי לנושא. ומתוך השיחה הזו נכנסים לשיחה על תחום התוכן.</p>
+</section>
+
+<!-- photosynthesis (after the art of asking questions) -->
+<section class="slide">
+  <h2>פוטוסינתזה: מ"תעתיקו את ההגדרה" לחקירה</h2>
+  <div class="cols" style="flex:1;min-height:0;align-items:stretch">
+    <div style="flex:.75;display:flex;flex-direction:column;gap:12px">
+      <div class="board">פוטוסינתזה היא תהליך שבו הצמח משתמש באנרגיית השמש כדי להפוך פחמן דו-חמצני ומים לסוכר.<br><br>&larr; תעתיקו למחברת</div>
+      <p class="small">לפני</p>
+    </div>
+    <div style="flex:1.35;display:flex;flex-direction:column;gap:14px">
+      <div class="qwrap f">
+        <span class="lbl">אחרי: התלמידים שואלים את הבינה, מתוך מה שמעניין אותם</span>
+        <span>מה זה "פוטו"? ומה זה "סינתזה"?</span>
+        <span>למה העלים ירוקים?</span>
+        <span>מה יקרה לצמח בחושך?</span>
+        <span>איך זה קשור לאוויר שאני נושם?</span>
+      </div>
+      <div class="qwrap cre f">
+        <span class="lbl">ועוד זווית, יצירתית ורעננה</span>
+        <span>איך זה מרגיש להיות מולקולת פחמן דו-חמצני שנכנסת לעלה?</span>
+        <span>אם הייתי קרן אור, מה הייתי עובר בדרך להפוך לסוכר?</span>
+        <span>מה היה קורה בעולם אם כל הצמחים היו שובתים ליום אחד?</span>
+        <span>איך היה נראה ראיון עבודה עם כלורופיל?</span>
+        <span>אילו הייתי ממציא עלה מלאכותי, מה הוא היה צריך לדעת לעשות?</span>
+      </div>
+    </div>
+  </div>
+  <p class="f" style="margin-top:12px;font-size:27px;text-align:center">המורה לא מעביר את ההגדרה. המורה מנחה את <span class="r">השיחה</span>.</p>
 </section>
 
 <!-- 18 reel -->
@@ -569,7 +611,7 @@ html,body{height:100%;background:#2E2D2A;overflow:hidden;font-family:'Heebo',Ari
 </section>
 <section class="slide">
   <h2 style="text-align:center;margin-bottom:14px">איך נראית למידה אותנטית?</h2>
-  <div style="flex:1;min-height:0;display:flex;align-items:center;justify-content:center"><video src="assets/story/s2-model.mp4" poster="assets/story/s2-poster.png" controls preload="metadata" style="max-width:100%;max-height:100%;border-radius:8px;box-shadow:0 8px 26px rgba(0,0,0,.12)"></video></div>
+  <div style="flex:1;min-height:0;display:flex;align-items:center;justify-content:center"><video src="assets/story/s2-model-he.mp4" poster="assets/story/s2-poster.png" controls preload="metadata" style="max-width:100%;max-height:100%;border-radius:8px;box-shadow:0 8px 26px rgba(0,0,0,.12)"></video></div>
 </section>
 <section class="slide">
   <h2 style="text-align:center;margin-bottom:14px">איך נראית למידה אותנטית?</h2>
@@ -627,71 +669,6 @@ html,body{height:100%;background:#2E2D2A;overflow:hidden;font-family:'Heebo',Ari
   </div>
 </section>
 
-<!-- 30 the promise (equal opportunity) -->
-<section class="slide">
-  <div class="split">
-    <div class="tx">
-      <div class="kicker">ההבטחה הגדולה</div>
-      <p class="huge" style="font-size:42px">"הבינה המלאכותית תהיה<br>
-        או <span class="g">המשווה הגדול ביותר</span> שהומצא אי פעם,<br>
-        או <span class="r">מקור העוול הגרוע ביותר</span>."</p>
-      <p class="dim f" style="font-size:22px;margin-top:14px">ביל גייטס, מאמר מ-26 באוגוסט 2026</p>
-      <p class="dim f en" style="font-size:18px;display:block;text-align:left">"AI will either be the greatest equalizer ever invented, or the worst source of injustice."</p>
-      <div class="rule f"></div>
-      <p class="lead f">מורה פרטי, עשרים וארבע שעות ביממה, בחינם, לכל תלמיד.<br>
-        <span class="dim">בואו נבדוק את זה לעומק.</span></p>
-    </div>
-    <div class="im"><img src="assets/gen/promise.png" alt=""></div>
-  </div>
-</section>
-
-<!-- 31 where it promotes equality -->
-<section class="slide">
-  <h2 style="margin-bottom:8px">איפה זה באמת <span class="g">מקדם שוויון</span></h2>
-  <div class="split">
-    <div class="tx">
-      <ul class="dots">
-        <li class="f" style="font-size:23px"><b>הון תרבותי סמוי.</b> לא לכל תלמיד יש הורה שיושב איתו על שיעורי הבית, או שיודע להסביר את החומר. עכשיו יש את מי לשאול, בלי להתבייש.</li>
-        <li class="f" style="font-size:23px"><b>שפה.</b> תלמיד שהעברית אינה שפת האם שלו - דובר ערבית, רוסית או אמהרית, או עולה חדש - מבין את החומר בשפה שלו, וחוזר לעברית.</li>
-        <li class="f" style="font-size:23px"><b>התאמה אישית.</b> אותו נושא, בקצב, ברמה ובדוגמאות שמתאימים לכל תלמיד. מה שמורה אחד מול שלושים לא יכול לתת לבד.</li>
-        <li class="f" style="font-size:23px"><b>זמינות.</b> השאלה עולה בעשר בלילה, כשאין את מי לשאול. הכלי זמין גם אז.</li>
-      </ul>
-    </div>
-    <div class="im" style="flex:.8"><img src="assets/gen/equality.png" alt=""></div>
-  </div>
-</section>
-
-<!-- 32 where it widens gaps -->
-<section class="slide">
-  <h2 style="margin-bottom:8px">ואיפה זה <span class="r">מגדיל פערים</span></h2>
-  <div class="split">
-    <div class="tx">
-      <ul class="dots">
-        <li class="f" style="font-size:22px"><b>פער הגישה.</b> הגרסה הטובה עולה כסף, ולא בכל בית יש מחשב פנוי. כבר לא "יש אינטרנט או אין" - אלא <span class="r">"יש מודל טוב או אין"</span>.</li>
-        <li class="f" style="font-size:22px"><b>פער האוריינות.</b> מי שיודע לשאול מקבל תשובה טובה פי כמה. הפער הזה נסתר - מבחוץ נראה שלכולם יש אותו כלי.</li>
-        <li class="f" style="font-size:22px"><b>פער הביקורתיות.</b> כדי לזהות שהמודל המציא, צריך ידע קודם.</li>
-        <li class="f" style="font-size:22px"><b>פער המוטיבציה.</b> בין מי שרוצה <span class="g">ללמוד</span> למי שרוצה <span class="r">ציון</span>. ראינו את זה קודם.</li>
-        <li class="f" style="font-size:22px"><b>הטיה במודל.</b> המודלים אומנו בעיקר על תרבות מערבית, ומשקפים אותה.</li>
-      </ul>
-    </div>
-    <div class="im" style="flex:.75"><img src="assets/gen/gaps.png" alt=""></div>
-  </div>
-</section>
-
-<!-- 33 the paradox -->
-<section class="slide">
-  <div class="split">
-    <div class="im"><img src="assets/gen/paradox.png" alt=""></div>
-    <div class="tx">
-      <div class="kicker">הפרדוקס</div>
-      <p class="huge" style="font-size:46px">מי שהכי צריך את הפיגום,<br>הוא גם מי שהכי בסיכון
-        <span class="r">להישען עליו במקום ללמוד</span>.</p>
-      <div class="rule f"></div>
-      <p class="big f">זו לא סיבה לא לתת.<br><b class="g">זו סיבה ללוות.</b></p>
-    </div>
-  </div>
-</section>
-
 <!-- ============ PART 4: FROM THEORY TO PRACTICE ============ -->
 
 <!-- 34 separator -->
@@ -708,7 +685,7 @@ html,body{height:100%;background:#2E2D2A;overflow:hidden;font-family:'Heebo',Ari
   <div class="agenda">
     <div class="it"><span class="n">01</span> איפה אנחנו במהפכה</div>
     <div class="it"><span class="n">02</span> החשש: ניוון ומוטיבציה</div>
-    <div class="it"><span class="n">03</span> ההבטחה: יוטגוגיה ושוויון הזדמנויות</div>
+    <div class="it"><span class="n">03</span> ההבטחה: יוטגוגיה ולמידה אותנטית</div>
     <div class="it act"><span class="n">04</span> מתיאוריה לפרקטיקה</div>
   </div>
 </section>
@@ -741,35 +718,15 @@ html,body{height:100%;background:#2E2D2A;overflow:hidden;font-family:'Heebo',Ari
   <p class="f big" style="margin-top:30px">הבינה <span class="r">כקביים</span>, ולא כמי שמקבלת את הסמכות. והמשחק כאן הוא של משתמש ביקורתי ואינטליגנטי.</p>
 </section>
 
-<!-- 37 photosynthesis -->
-<section class="slide">
-  <h2>פוטוסינתזה: מ"תעתיקו את ההגדרה" לחקירה</h2>
-  <div class="cols" style="flex:1;min-height:0;align-items:stretch">
-    <div style="flex:.9;display:flex;flex-direction:column;gap:12px">
-      <div class="board">פוטוסינתזה היא תהליך שבו הצמח משתמש באנרגיית השמש כדי להפוך פחמן דו-חמצני ומים לסוכר.<br><br>&larr; תעתיקו למחברת</div>
-      <p class="small">לפני</p>
-    </div>
-    <div class="qnet f" style="flex:1.1">
-      <span style="top:10px;right:10px">מה זה "פוטו"? ומה זה "סינתזה"?</span>
-      <span style="top:80px;left:10px">למה העלים ירוקים?</span>
-      <span style="top:150px;right:40px">מה יקרה לצמח בחושך?</span>
-      <span style="top:220px;left:30px">איך זה קשור לאוויר שאני נושם?</span>
-      <span style="top:290px;right:0px">מה אם הייתי צמח?</span>
-      <p class="small" style="position:absolute;bottom:0;left:0">אחרי: התלמידים שואלים את הבינה, מתוך מה שמעניין אותם</p>
-    </div>
-  </div>
-  <p class="f" style="margin-top:14px;font-size:27px;text-align:center">המורה לא מעביר את ההגדרה. המורה מנחה את <span class="r">השיחה</span>.</p>
-</section>
-
 <!-- 38 SAMR ladder -->
 <section class="slide">
   <div class="kicker">מודל <span class="en">SAMR</span> &middot; רובן פואנטדורה</div>
   <h2 style="margin-bottom:12px">ארבע מדרגות של שילוב טכנולוגיה בלמידה</h2>
   <div class="stairs">
-    <div class="stp s1 f"><div class="lv">מדרגה 1</div><h4>החלפה</h4><div class="en">Substitution</div><p>הכלי הדיגיטלי מחליף כלי ישן, והמשימה לא משתנה. דף עבודה כקובץ, במקום מודפס.</p></div>
-    <div class="stp s2 f"><div class="lv">מדרגה 2</div><h4>העצמה</h4><div class="en">Augmentation</div><p>אותה משימה, עם שיפור אמיתי. בוחן דיגיטלי שנותן לכל תלמיד משוב מיידי על כל תשובה.</p></div>
-    <div class="stp s3 f"><div class="lv">מדרגה 3</div><h4>שינוי</h4><div class="en">Modification</div><p>המשימה עצמה מעוצבת מחדש. כתיבה משותפת במסמך חי, עם משוב מהמורה ומהבינה תוך כדי העבודה.</p></div>
-    <div class="stp s4 f"><div class="lv">מדרגה 4</div><h4>הגדרה מחדש</h4><div class="en">Redefinition</div><p>משימה שלא הייתה אפשרית קודם. חונך מבוסס בינה לכל תלמיד, בקצב שלו, או כלי שנבנה במיוחד לשיעור אחד.</p></div>
+    <div class="stp s1 f"><div class="lv">מדרגה 1</div><h4>החלפה</h4><div class="en">Substitution</div><p>הכלי הדיגיטלי מחליף כלי ישן, והמשימה לא משתנה.<br><b class="ex">לדוגמה:</b> דף עבודה כקובץ, במקום מודפס.</p></div>
+    <div class="stp s2 f"><div class="lv">מדרגה 2</div><h4>העצמה</h4><div class="en">Augmentation</div><p>אותה משימה, עם שיפור אמיתי.<br><b class="ex">לדוגמה:</b> בוחן דיגיטלי שנותן לכל תלמיד משוב מיידי על כל תשובה.</p></div>
+    <div class="stp s3 f"><div class="lv">מדרגה 3</div><h4>שינוי</h4><div class="en">Modification</div><p>המשימה עצמה מעוצבת מחדש.<br><b class="ex">לדוגמה:</b> כתיבה משותפת במסמך חי, עם משוב מהמורה ומהבינה תוך כדי העבודה.</p></div>
+    <div class="stp s4 f"><div class="lv">מדרגה 4</div><h4>הגדרה מחדש</h4><div class="en">Redefinition</div><p>משימה שלא הייתה אפשרית קודם.<br><b class="ex">לדוגמה:</b> חונך מבוסס בינה לכל תלמיד, בקצב שלו, או כלי שנבנה במיוחד לשיעור אחד.</p></div>
   </div>
   <div class="band f"><div class="imp">שתי הראשונות: משפרות את הקיים</div><div class="tr">שתי האחרונות: משנות את הלמידה עצמה</div></div>
   <p class="f" style="margin-top:12px;font-size:27px;text-align:center;font-weight:700">ואיפה נמצא היום השימוש שלנו במחשבים בכיתה?</p>
@@ -777,7 +734,8 @@ html,body{height:100%;background:#2E2D2A;overflow:hidden;font-family:'Heebo',Ari
 
 <!-- 39 digital bristols -->
 <section class="slide">
-  <h2>בריסטולים דיגיטליים</h2>
+  <div class="kicker">בריסטולים דיגיטליים</div>
+  <h2>וויב קודינג</h2>
   <p style="font-size:26px;margin-bottom:18px">פעם נכנסנו לכיתה עם בריסטול. היום אפשר להכין כלי שתפור לשיעור אחד, בלי לדעת לתכנת.</p>
   <div class="grid5">
     <div class="fc"><div class="k">גיל רך</div><h4>מעבדת ערבוב צבעים</h4><p>גוררים שני צבעים, ורואים מה נוצר</p></div>
@@ -822,7 +780,7 @@ html,body{height:100%;background:#2E2D2A;overflow:hidden;font-family:'Heebo',Ari
     <li class="f">לתכנן שיעור אחד בשיחת חשיבה עם הבינה, ולא בבקשת תוצר.</li>
     <li class="f">להחליף משימה אחת של "תעתיקו" בשאלה שהתלמידים חוקרים.</li>
   </ul>
-  <p class="f huge" style="margin-top:22px;color:var(--accent-dk);font-size:44px">בחרו אחד. רק אחד.</p>
+  <p class="f huge" style="margin-top:22px;color:var(--accent-dk);font-size:44px">אפשר להתחיל רק עם אחד.</p>
 </section>
 
 <!-- 42 thanks -->
@@ -896,6 +854,8 @@ html,body{height:100%;background:#2E2D2A;overflow:hidden;font-family:'Heebo',Ari
     if(n.getDate()<s.getDate()) m--;
     document.getElementById('cY').textContent=Math.floor(m/12);
     document.getElementById('cM').textContent=m%12;
+    const a=new Date(s.getFullYear(), s.getMonth()+m, s.getDate());
+    document.getElementById('cD').textContent=Math.floor((n-a)/864e5);
   })();
 
   // pair-share timer: 3 minutes per speaker; starts when its card is revealed, resets when hidden
